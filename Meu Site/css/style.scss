@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+@import './typi-master/scss/typi';
+@include typi-init;
+
+/*
+	1. Fonts
+	2. Font-size
+	3. Colors
+	
+*/
+
+
+/* Fonts */
+
+$font-body: 'Lato',
+sans-serif;
+
+/*Font-size*/
+
+$typi:( base:( null: (16px, 1.2), small: (18px, 1.4), //phones: (20px, 1.6),
+//tablets: (18px, 1.4),
+large: (14px, 1)));
+$breakpoints:( //phones: 576px,
+//tablets: 768px,
+small: 768px,
+large: 1200px);
+
+/* Colors */
+
+$green:#8edc78;
+$yellow:#f0f66e;
+$blue:#2d6d9b;
+$red:#ce2837;
+$bege: #f6f6f6;
+body {
+	font-family: $font-body;
+	background-color: $bege;
+}
+
+h1 {
+	color: $red;
+	font-size: 5.2em;
+}
+
+h2 {
+	font-size: 3.8em;
+}
+
+h3,
+.medium {
+	font-size: 2.6em;
+}
+
+nav {
+	background-color: transparent;
+	box-shadow: unset;
+}
+
+html,
+body {
+	width: 100%;
+	height: 100%;
+}
+
+main.container {
+	max-width: unset;
+	margin: unset;
+}
+
+main.container,
+.row.top {
+	height: 100%;
+	width: 100%;
+}
+
+.down {
+	margin-top: 60px;
+}
+
+.down i.material-icons {
+	color: $red;
+	transition: 1s color ease;
+	font-size: 3em;
+	cursor: pointer;
+}
+
+.down i.material-icons:hover {
+	color: $blue;
+	margin-top: 10px;
+}
+
+.row.python {
+	background-color: $yellow;
+}
+
+$parallax-height: 300px;
+.bg-red {
+	background-color: $red;
+}
+
+.container .row {
+	margin: 0;
+}
+
+.com {
+	background-color: $red;
+	color: $bege;
+	padding-top: 50px;
+	padding-bottom: 70px;
+}
+
+.category i.material-icons {
+	float: left;
+	font-size: 2.5em;
+	margin-top: 25px;
+	padding-left: 10px;
+}
+
+.instance {
+	display: block;
+	float: left;
+	width: 100%;
+}
+
+.instance h3 {
+	float: left;
+	display: inline-block;
+}
+
+.category {
+	display: flex;
+	position: relative;
+}
+
+.instance .descricao {
+	display: inline-block;
+	//    max-width: 60%;
+	float: left;
+	position: relative;
+	clear: left;
+	text-align: justify;
+}
+
+
+/*notebook*/
+
+.container-notebook {
+	margin-left: 50px;
+	margin-top: 40px;
+	
+}
+
+.tela-outer {
+	border: 3px solid black;
+	border-radius: 5px;
+	border-bottom-left-radius: 0;
+	border-bottom-right-radius: 0;
+	height: 120px;
+	width: 200px;
+	background-color: #000;
+}
+
+.tela-inner {
+	height: 90px;
+	width: 170px;
+	background-color: #fff;
+	position: relative;
+	margin-left: 5px;
+	margin-top: 5px;
+	padding: 10px;
+}
+
+.keyboard-outer {
+	width: 206px;
+	margin-left: -20px;
+	border-left: 20px solid transparent;
+	border-bottom: 50px solid #000;
+	border-right: 20px solid transparent;
+}
+
+.keyboard-inner {
+	border-left: 15px solid transparent;
+	border-right: 15px solid transparent;
+	border-bottom: 40px solid #ddd;
+	width: 175px;
+	position: absolute;
+}
+
+.container-notebook *,
+.container-notebook *:before,
+.container-notebook *:after {
+	box-sizing: content-box;
+}
+
+span.textinho {
+	height: 10px;
+	background-color: #000;
+	border-radius: 4px;
+	width: 0;
+	display: block;
+	margin-bottom: 10px;
+}
+
+.horizontal span.tecla {
+	width: 190px;
+	height: 2px;
+	position: absolute;
+	z-index: 3;
+	background: #000;
+	left: -10px;
+}
+
+.card.sublime {
+	background-color: #272822;
+	height: auto;
+	width: auto;
+	padding-left: 15px;
+}
+
+.card.sublime code {
+	font-size: 13px;
+	color: yellow;
+}

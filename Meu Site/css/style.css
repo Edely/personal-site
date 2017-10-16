@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css?family=Lato");
+/* line 61, /home/edely/Documentos/Projetos/Meu Site/css/typi-master/scss/public/typi/_typi.scss */
+html {
+  font-size: 100%;
+  line-height: 1.5; }
+
+/*
+	1. Fonts
+	2. Font-size
+	3. Colors
+	
+*/
+/* Fonts */
+/*Font-size*/
+/* Colors */
+/* line 35, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+body {
+  font-family: "Lato", sans-serif;
+  background-color: #f6f6f6; }
+
+/* line 40, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+h1 {
+  color: #ce2837;
+  font-size: 5.2em; }
+
+/* line 45, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+h2 {
+  font-size: 3.8em; }
+
+/* line 49, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+h3,
+.medium {
+  font-size: 2.6em; }
+
+/* line 54, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+nav {
+  background-color: transparent;
+  box-shadow: unset; }
+
+/* line 59, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+html,
+body {
+  width: 100%;
+  height: 100%; }
+
+/* line 65, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+main.container {
+  max-width: unset;
+  margin: unset; }
+
+/* line 70, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+main.container,
+.row.top {
+  height: 100%;
+  width: 100%; }
+
+/* line 76, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.down {
+  margin-top: 60px; }
+
+/* line 80, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.down i.material-icons {
+  color: #ce2837;
+  transition: 1s color ease;
+  font-size: 3em;
+  cursor: pointer; }
+
+/* line 87, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.down i.material-icons:hover {
+  color: #2d6d9b;
+  margin-top: 10px; }
+
+/* line 92, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.row.python {
+  background-color: #f0f66e; }
+
+/* line 97, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.bg-red {
+  background-color: #ce2837; }
+
+/* line 101, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.container .row {
+  margin: 0; }
+
+/* line 105, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.com {
+  background-color: #ce2837;
+  color: #f6f6f6;
+  padding-top: 50px;
+  padding-bottom: 70px; }
+
+/* line 112, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.category i.material-icons {
+  float: left;
+  font-size: 2.5em;
+  margin-top: 25px;
+  padding-left: 10px; }
+
+/* line 119, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.instance {
+  display: block;
+  float: left;
+  width: 100%; }
+
+/* line 125, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.instance h3 {
+  float: left;
+  display: inline-block; }
+
+/* line 130, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.category {
+  display: flex;
+  position: relative; }
+
+/* line 135, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.instance .descricao {
+  display: inline-block;
+  float: left;
+  position: relative;
+  clear: left;
+  text-align: justify; }
+
+/*notebook*/
+/* line 147, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.container-notebook {
+  margin-left: 50px;
+  margin-top: 40px; }
+
+/* line 153, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.tela-outer {
+  border: 3px solid black;
+  border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  height: 120px;
+  width: 200px;
+  background-color: #000; }
+
+/* line 163, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.tela-inner {
+  height: 90px;
+  width: 170px;
+  background-color: #fff;
+  position: relative;
+  margin-left: 5px;
+  margin-top: 5px;
+  padding: 10px; }
+
+/* line 173, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.keyboard-outer {
+  width: 206px;
+  margin-left: -20px;
+  border-left: 20px solid transparent;
+  border-bottom: 50px solid #000;
+  border-right: 20px solid transparent; }
+
+/* line 181, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.keyboard-inner {
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 40px solid #ddd;
+  width: 175px;
+  position: absolute; }
+
+/* line 189, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.container-notebook *,
+.container-notebook *:before,
+.container-notebook *:after {
+  box-sizing: content-box; }
+
+/* line 195, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+span.textinho {
+  height: 10px;
+  background-color: #000;
+  border-radius: 4px;
+  width: 0;
+  display: block;
+  margin-bottom: 10px; }
+
+/* line 204, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.horizontal span.tecla {
+  width: 190px;
+  height: 2px;
+  position: absolute;
+  z-index: 3;
+  background: #000;
+  left: -10px; }
+
+/* line 213, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.card.sublime {
+  background-color: #272822;
+  height: auto;
+  width: auto;
+  padding-left: 15px; }
+
+/* line 220, /home/edely/Documentos/Projetos/Meu Site/css/style.scss */
+.card.sublime code {
+  font-size: 13px;
+  color: yellow; }
+
+/*# sourceMappingURL=style.css.map */

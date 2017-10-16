@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Edely Gomes</title>
+	<!--Import Google Icon Font-->
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<!--Import materialize.css-->
+	<link type="text/css" rel="stylesheet" href="css/materialize.min.css" media="screen,projection" />
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+	<header>
+		<nav class="nav"></nav>
+	</header>
+	<main class="container">
+		<div id="topo" class="row top">
+			<h1 class="col s12 center">Edely Gomes</h1>
+			<div class="resume col s8 push-s2 center">
+				<p>Eu sou uma jornalista/programadora de Salvador, Brasil. Meus interesses incluem jornalismo de dados, webscraping e data visualization.
+				</p>
+				<p>Você pode me achar nas redes sociais ou no <a href="http://raulhc.cc/" target="_blank">Raul Hacker Club</a>, onde realizo encontros para jornalistas, programadores e hackativistas</p>
+			</div>
+			<div class="down col s12 center">
+				<span><i class="material-icons">keyboard_arrow_down</i></span>
+			</div>
+		</div>
+
+		<div id="com" class="row com">
+			<h2 class="col s12 center">Jornalismo</h2>
+			<div class="col s12 m7 com-experiences">
+				<div class="category">
+					<div class="col s1">
+						<i class="material-icons">school</i>
+					</div>
+					<div class="instance col s11">
+						<h3>UFBA</h3>
+						<div class="descricao">
+							Me formei em Jornalismo (2013) na UFBA. 
+						</div>
+					</div>
+				</div>
+				<div class="category">
+					<div class="col s1">
+						<i class="material-icons">work</i>
+					</div>
+					<div class="col s11">
+						<div class="instance">
+							<h3>A TARDE</h3>
+							<div class="descricao">
+								<p><a href="https://issuu.com/edelygomes" target="_blank">Estágio nas editorias de Emprego e Negócios, Concursos, Cidade.</a></p>
+							</div>
+						</div>
+						<div class="instance">
+							<h3>Correio de Futuro</h3>
+							<div class="descricao">
+								<p><a href="http://www2.correio24horas.com.br/jornalismo-de-futuro/digital/" target="_blank">Participação na primeira turma do Jornalismo de Futuro.</a></p>	
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col s12 m5">
+				<div class="container-notebook">
+					<div class="tela-outer">
+						<div class="tela-inner">
+							<span class="textinho"></span>
+							<span class="textinho"></span>
+							<span class="textinho"></span>
+							<span class="textinho"></span>
+							<span class="textinho"></span>
+
+						</div>
+					</div>
+					<div class="keyboard-outer">
+						<div class="keyboard-inner">
+							<div class="horizontal">
+								<span class="tecla" style="top:6px;"></span>
+								<span class="tecla" style="top:13px;"></span>
+								<span class="tecla" style="top:20px; width:200px"></span>
+								<span class="tecla" style="top:27px; left:-11px;width:210px;"></span>
+								<span class="tecla" style="top:34px; width:210px; left:-15px;"></span>
+							</div>
+							<div class="vertical">
+								<span class="tecla" style="top:6px;"></span>
+								<span class="tecla" style="top:13px;"></span>
+								<span class="tecla" style="top:20px; width:200px"></span>
+								<span class="tecla" style="top:27px; left:-11px;width:210px;"></span>
+								<span class="tecla" style="top:34px; width:210px; left:-15px;"></span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="python" class="row python">
+			<h2 class="col s12 center">Python</h2>
+			<div class="col s1"></div>
+			<div class="col s5">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt impedit neque alias, id asperiores optio veritatis, numquam unde, exercitationem consequuntur totam commodi reprehenderit ipsam, facilis sunt magni possimus aut eius.</p>
+				<p>Rem sed quam, nihil tenetur obcaecati explicabo, mollitia totam corrupti consequuntur incidunt eum nostrum, ex nobis deleniti, minima dolorum rerum tempora? Natus ex perspiciatis quis aliquid, quasi error praesentium, aliquam.</p>
+				<p>Tenetur beatae temporibus quos iure modi. Beatae suscipit, omnis blanditiis dolorum, possimus veritatis sed nisi ipsa, harum reprehenderit, dolor voluptatem nostrum. Quidem accusamus hic molestias ab unde impedit nulla doloribus.</p>
+				<p>Beatae pariatur eos impedit ab nisi nam sequi corporis, maxime blanditiis obcaecati alias cumque magni, facilis at quo, dolorum recusandae excepturi officia officiis placeat ad voluptas soluta itaque! Possimus, optio.</p>
+				<p>Deserunt, ea, dicta. Ipsa rem molestiae in, incidunt facilis laudantium sequi, eveniet ducimus libero eius dolorum earum inventore mollitia placeat unde quas culpa numquam, veritatis expedita aut quo excepturi. Ab.</p>
+			</div>
+			<div class="col s6">
+				<div class="card sublime">
+					<pre><code>
+# -*- coding: utf-8 -*-
+from bs4 import BeautifulSoup
+import mechanize
+
+br = mechanize.Browser()
+br.open("https://pt.wikipedia.org/wiki/Unidades_federativas_do_Brasil")
+pagina_wikipedia = br.response().read()
+
+soup = BeautifulSoup(pagina_wikipedia, "html5lib")
+tabela_estados = soup.find_all("table", class_=["wikitable", "sortable", "jquery-tablesorter"])	
+
+trs = tabela_estados[0].find_all("tr")
+#i = 0
+for tr in trs:
+	tds = tr.find_all("td")
+	
+	try:
+		estado = tds[1]
+		populacao = tds[4]
+		capital = tds[3]
+		populacao = populacao.get_text()
+		capital = capital.get_text()
+		estado = estado.get_text()
+		
+		print estado
+		print 'Capital:'
+		print capital
+		print 'População:'
+		print populacao
+		print '\n'
+	except:
+		pass		
+</code></pre>
+				</div>
+			</div>
+		</div>
+		<div id="dev" class="row dev">
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quis perferendis a, dolore porro totam, culpa et dolorem impedit, cupiditate nihil voluptatibus voluptates quidem ad suscipit qui sunt eum repellendus rerum!</p>
+		</div>
+	</main>
+	<footer>
+
+	</footer>
+
+	<!--Import jQuery before materialize.js-->
+	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js"></script>
+	<script type="text/javascript" src="js/materialize.min.js"></script>
+	<script src="js/typed.min.js"></script>
+	<script type="text/javascript" src="js/functions.js"></script>
+</body>
+
+</html>
